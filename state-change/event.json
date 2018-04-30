@@ -1,0 +1,57 @@
+{
+  "version": "0",
+  "id": "76550518-5563-5738-760f-cd7ec1da7049",
+  "detail-type": "ECS Task State Change",
+  "source": "aws.ecs",
+  "account": "000000000000",
+  "time": "2018-04-30T20:04:33Z",
+  "region": "us-east-1",
+  "resources": [
+    "arn:aws:ecs:us-east-1:000000000000:task/037d58fc-e5f6-4e95-ac1f-3ce533bb2abb"
+  ],
+  "detail": {
+    "clusterArn":
+      "arn:aws:ecs:us-east-1:000000000000:cluster/DeploymentSlaveCluster",
+    "containerInstanceArn":
+      "arn:aws:ecs:us-east-1:000000000000:container-instance/117e59fc-f74b-4b8e-adcf-9d126306eaae",
+    "containers": [
+      {
+        "containerArn":
+          "arn:aws:ecs:us-east-1:000000000000:container/6ffcce42-d074-43dd-a4be-4807d4afa87b",
+        "exitCode": 0,
+        "lastStatus": "STOPPED",
+        "name": "example-ecs-events",
+        "taskArn":
+          "arn:aws:ecs:us-east-1:000000000000:task/037d58fc-e5f6-4e95-ac1f-3ce533bb2abb"
+      }
+    ],
+    "createdAt": "2018-04-30T20:04:30.509Z",
+    "launchType": "EC2",
+    "cpu": "0",
+    "memory": "256",
+    "desiredStatus": "STOPPED",
+    "group": "family:example-ecs-events-ec2",
+    "lastStatus": "STOPPED",
+    "overrides": {
+      "containerOverrides": [
+        {
+          "name": "example-ecs-events"
+        }
+      ]
+    },
+    "connectivity": "CONNECTED",
+    "pullStartedAt": "2018-04-30T20:04:31.386Z",
+    "startedAt": "2018-04-30T20:04:33.386Z",
+    "stoppingAt": "2018-04-30T20:04:33.646Z",
+    "stoppedAt": "2018-04-30T20:04:33.646Z",
+    "pullStoppedAt": "2018-04-30T20:04:32.386Z",
+    "executionStoppedAt": "2018-04-30T20:04:33Z",
+    "stoppedReason": "Essential container in task exited",
+    "updatedAt": "2018-04-30T20:04:33.646Z",
+    "taskArn":
+      "arn:aws:ecs:us-east-1:000000000000:task/037d58fc-e5f6-4e95-ac1f-3ce533bb2abb",
+    "taskDefinitionArn":
+      "arn:aws:ecs:us-east-1:000000000000:task-definition/example-ecs-events-ec2:1",
+    "version": 3
+  }
+}

@@ -6,21 +6,37 @@ provider:
   iamRoleStatements:
     - Effect: "Allow"
       Action:
-        - "sns:*"
-      Resource: "*"
+        - "sns:publish"
+      Resource:
+        - Ref: ECSStateChangeTopic
 
 functions:
   state-change:
     handler: state-change/index.handler
+    environment:
+      TOPIC_ARN:
+        Ref: ECSStateChangeTopic
+      MODE: all # | errors | success
     events:
       - cloudwatchEvent:
           event:
             source:
-              - aws.ec2
+              - aws.ecs
             detail-type:
-              - EC2 Instance State-change Notification
+              - ECS Task State Change
             detail:
+              # clusterArn:
+              #   - arn:aws:ecs:eu-west-1:000000000000:cluster/example-cluster-arn
               lastStatus:
                 - STOPPED
               stoppedReason:
                 - Essential container in task exited
+                # - Task stopped by user
+
+resources:
+  Resources:
+    ECSStateChangeTopic:
+      Type: AWS::SNS::Topic
+      Properties:
+        DisplayName: ECS State Change
+        TopicName: ECSStateChangeTopic
