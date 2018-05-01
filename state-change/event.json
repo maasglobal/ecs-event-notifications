@@ -11,7 +11,7 @@
   ],
   "detail": {
     "clusterArn":
-      "arn:aws:ecs:us-east-1:000000000000:cluster/DeploymentSlaveCluster",
+      "arn:aws:ecs:us-east-1:000000000000:cluster/my-cluster-name",
     "containerInstanceArn":
       "arn:aws:ecs:us-east-1:000000000000:container-instance/117e59fc-f74b-4b8e-adcf-9d126306eaae",
     "containers": [

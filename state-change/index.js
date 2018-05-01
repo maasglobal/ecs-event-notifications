@@ -17,5 +17,5 @@ module.exports.handler = async (event) => {
       }).promise();
   }
 
-  return Promise.resolve();
+  return Promise.resolve('ignoring');
 };
