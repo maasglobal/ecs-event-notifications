@@ -9,7 +9,7 @@ This service is an example implementation how to use AWS CloudWatch events to mo
 
 This service uses [Serverless Framework](https://github.com/serverless/serverless/) to deploy components to AWS.
 
-To install service use `sls install https://github.com/maasglobal/ecs-event-notifications.git -n my-ecs-events`, where `my-ecs-events` is the name of the service you prefer to use.
+To install service use `sls install -u https://github.com/maasglobal/ecs-event-notifications -n my-ecs-events`, where `my-ecs-events` is the name of the service you prefer to use.
 
 After installation, change directory to `my-ecs-events` and install dependencies with `npm install`.
 
