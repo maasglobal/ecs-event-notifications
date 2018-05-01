@@ -1,7 +1,7 @@
 # ECS State Change Notifications
 
 [![serverless](http://public.serverless.com/badges/v3.svg)](http://www.serverless.com)
-[![Build Status](https://travis-ci.org/laardee/ecs-events.svg?branch=master)](https://travis-ci.org/laardee/ecs-events)
+[![Build Status](https://travis-ci.org/maasglobal/ecs-event-notifications.svg?branch=master)](https://travis-ci.org/maasglobal/ecs-event-notifications)
 
 This service is an example implementation how to use AWS CloudWatch events to monitor ECS container states. AWS CloudWatch event triggers a Lambda function that published a message to an SNS topic, which can be subscribed to send, e.g. message to an email address, SMS message, or notification to Slack channel.
 
