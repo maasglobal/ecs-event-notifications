@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "Send notifications on ECS state change",
   "dependencies": {},
+  "private": true,
   "devDependencies": {
     "aws-sdk": "^2.221.1",
     "eslint": "^4.19.1",
@@ -20,12 +21,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/laardee/ecs-events.git"
+    "url": "git+https://github.com/maasglobal/ecs-events-notifications.git"
   },
-  "author": "",
+  "author": "Eetu Tuomala <eetu.tuomala@maas.global> (https://github.com/laardee)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/laardee/ecs-events/issues"
+    "url": "https://github.com/maasglobal/ecs-events-notifications/issues"
   },
-  "homepage": "https://github.com/laardee/ecs-events#readme"
+  "homepage": "https://github.com/maasglobal/ecs-events-notifications#readme"
 }
