@@ -21,12 +21,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/maasglobal/ecs-events-notifications.git"
+    "url": "git+https://github.com/maasglobal/ecs-event-notifications.git"
   },
   "author": "Eetu Tuomala <eetu.tuomala@maas.global> (https://github.com/laardee)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/maasglobal/ecs-events-notifications/issues"
+    "url": "https://github.com/maasglobal/ecs-event-notifications/issues"
   },
-  "homepage": "https://github.com/maasglobal/ecs-events-notifications#readme"
+  "homepage": "https://github.com/maasglobal/ecs-event-notifications#readme"
 }
