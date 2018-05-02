@@ -34,9 +34,22 @@ functions:
                 # - Task stopped by user
 
 resources:
+  Outputs:
+    ECSStateChangeTopic:
+      Description: ECS State Change Topic ARN
+      Value:
+        Ref: ECSStateChangeTopic
   Resources:
     ECSStateChangeTopic:
       Type: AWS::SNS::Topic
       Properties:
         DisplayName: ECS State Change
         TopicName: ECSStateChangeTopic
+    # # Subscribe to SNS topic
+    # ECSStateChangeSubscription:
+    #   Type: AWS::SNS::Subscription
+    #   Properties:
+    #     Endpoint: my.email@example.com
+    #     Protocol: email
+    #     TopicArn:
+    #       Ref: ECSStateChangeTopic
