@@ -16,7 +16,7 @@ functions:
     environment:
       TOPIC_ARN:
         Ref: ECSStateChangeTopic
-      MODE: all # | errors | success
+      MODE: errors # possible other values are 'all' and 'success'
     events:
       - cloudwatchEvent:
           event:
@@ -45,7 +45,7 @@ resources:
       Properties:
         DisplayName: ECS State Change
         TopicName: ECSStateChangeTopic
-    # # Subscribe to SNS topic
+    # # Subscribe to SNS topic -> remove #s to enable resource
     # ECSStateChangeSubscription:
     #   Type: AWS::SNS::Subscription
     #   Properties:
