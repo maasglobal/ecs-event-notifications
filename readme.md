@@ -5,6 +5,8 @@
 
 This service is an example implementation how to use AWS CloudWatch events to monitor ECS container states. AWS CloudWatch event triggers a Lambda function that published a message to an SNS topic, which can be subscribed to send, e.g. message to an email address, SMS message, or notification to Slack channel.
 
+[Subscribe to AWS ECS Event Stream Using Serverless Framework @ Medium](https://medium.com/@laardee/subscribe-to-aws-ecs-event-stream-using-serverless-framework-74de3db66ddb)
+
 ## Installation
 
 This service uses [Serverless Framework](https://github.com/serverless/serverless/) to deploy components to AWS.
