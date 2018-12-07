@@ -3,13 +3,12 @@ const sandbox = require('sinon').createSandbox()
 const { handler } = require('./index')
 
 describe('State change', () => {
-  beforeAll(() =>
-    sandbox
-      .stub(AWS.SNS.prototype, 'makeRequest')
-      .withArgs('publish')
-      .returns({
-        promise: () => 'sns'
-      }))
+  beforeAll(() => sandbox
+    .stub(AWS.SNS.prototype, 'makeRequest')
+    .withArgs('publish')
+    .returns({
+      promise: () => 'sns'
+    }))
 
   afterEach(() => delete process.env.MODE)
 
